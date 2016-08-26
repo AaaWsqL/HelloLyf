@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rl_grp1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_cardiology"
+            android:layout_marginTop="10dp"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:background="@drawable/cardio"/>
+
+        <Button
+
+            android:layout_toRightOf="@+id/btn_cardiology"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:background="@drawable/dental"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_grp1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl_grp2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_psychiatry"
+            android:layout_marginTop="10dp"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:background="@drawable/diab"/>
+
+        <Button
+
+            android:layout_toRightOf="@+id/btn_psychiatry"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:background="@drawable/pulm"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_grp2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl_grp3"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_sexology"
+            android:layout_marginTop="10dp"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:background="@drawable/opthal"/>
+
+        <Button
+
+            android:layout_toRightOf="@+id/btn_sexology"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:background="@drawable/nutri"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/rl_grp3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
+        <ImageView
+            android:id="@+id/cirle_first"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/white_radius"/>
+
+        <ImageView
+            android:id="@+id/cirle_middle"
+            android:layout_toRightOf="@+id/cirle_first"
+            android:layout_marginTop="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/blue_radius"/>
+        <ImageView
+            android:id="@+id/cirle_last"
+            android:layout_toRightOf="@+id/cirle_middle"
+            android:layout_marginTop="7dp"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/white_radius"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

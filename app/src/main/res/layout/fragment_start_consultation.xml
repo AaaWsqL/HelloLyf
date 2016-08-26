@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/chat_image"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/chat_btn"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#a3a8a9"
+            android:textColor="#f2f4f5"
+            android:text="start a chat" />
+        <Button
+            android:id="@+id/send_files_btn"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:layout_toRightOf="@+id/chat_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="#00C8FF"
+            android:textColor="#f2f4f5"
+            android:text="send files" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

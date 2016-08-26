@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Basic Info"
+        android:textSize="25dp"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textview_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:paddingTop="5dp"
+        android:text="First Name"
+        />
+    <EditText
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/edittext_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:gravity="center_horizontal"
+
+        android:hint="FIRST NAME"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textview_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:paddingTop="5dp"
+        android:text="Last Name"
+        />
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/edittext_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="65dp"
+        android:paddingRight="65dp"
+        android:paddingTop="10dp"
+        android:gravity="center_horizontal"
+
+        android:hint="LAST NAME"/>
+
+
+
+<RelativeLayout
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerHorizontal="true"
+        android:id="@+id/textview_DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:paddingTop="5dp"
+        android:text="Date of Birth" />
+
+        <EditText
+        android:id="@+id/edittext_DOB"
+        android:layout_below="@+id/textview_DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:inputType="date"
+
+        android:hint="DATE OF BIRTH"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/rl_dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+        android:id="@+id/textview_age"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:paddingTop="5dp"
+            android:inputType="number"
+        android:text="Age" />
+
+        <EditText
+        android:id="@+id/edittext_age"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:hint="AGE"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="#586264"
+            android:id="@+id/mle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f2f4f5"
+            android:text="Male"/>
+        <Button
+            android:background="#d166bf"
+            android:id="@+id/fmle_btn"
+            android:layout_toRightOf="@+id/mle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f2f4f5"
+            android:text="female"/>
+        <Button
+            android:id="@+id/othr_btn"
+            android:background="#878f91"
+            android:layout_toRightOf="@+id/fmle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f2f4f5"
+            android:text="others"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#00C8FF"
+        android:text="Next Step"/>
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cirle_big"
+            android:layout_marginTop="5dp"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/blue_radius"/>
+
+        <ImageView
+            android:layout_toRightOf="@+id/cirle_big"
+            android:layout_marginTop="7dp"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:src="@drawable/white_radius"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

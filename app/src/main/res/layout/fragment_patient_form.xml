@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@drawable/bckg">
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back_button3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/back"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="CHOOSE A DOCTOR"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/edittext_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+
+        android:hint="PATIENT NAME"/>
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rl_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:layout_centerHorizontal="true"
+                android:id="@+id/edittext_DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:hint="DATE OF BIRTH"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/rl_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/edittext_age"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_edittext"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:hint="AGE"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/edittext_specialist"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:hint="SELECT A SPECIALIST"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/edittext_language"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:hint="SELECT A LANGUAGE"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/edittext_doctor"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:hint="CHOOSE A DOCTOR FROM LIST"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/edittext_complaints"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:hint="TELL US YOUR COMPLAINTS"/>
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/edittext_coupon"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:hint="ENTER COUPON (IF ANY)"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AMOUNT TO BE PAID"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/textview_signup"
+            android:layout_toRightOf="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Rs. 599"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_below="@+id/edittext_password"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/consult_btn"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
+        android:background="#007DEF"
+        android:text="Start counsultation"
+        android:textColor="#f2f4f5"
+
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+
+
+
+
+</LinearLayout>
